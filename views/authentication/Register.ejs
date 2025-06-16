@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - FootwearFuture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-button-hover:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#0A2025]">
+    <%- include("../partials/Navbar.ejs") %>
+    <!-- Registration Hero Section -->
+    <section class="w-full bg-[#0A2025] py-16 px-4 sm:px-8 animate-fadeInUp">
+        <div class="mx-auto max-w-[1440px]">
+            <h1 class="text-white text-4xl sm:text-5xl font-bold font-['Roboto'] text-center mb-8">
+                <span class="text-white">Join </span><span class="text-[#3e9d26]">FootwearFuture</span>
+            </h1>
+            <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center max-w-3xl mx-auto mb-12">
+                Create an account to unlock exclusive access to our futuristic footwear collections, personalized offers, and the latest updates from FootwearFuture.
+            </p>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section class="w-full bg-[#1a2f34] py-16 px-4 sm:px-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+        <div class="mx-auto max-w-[1440px] flex justify-center">
+            <div class="w-full max-w-md bg-[#0A2025] p-8 rounded-lg shadow-lg">
+                <h2 class="text-white text-2xl sm:text-3xl font-bold font-['Roboto'] mb-6 text-center">
+                    Register Now
+                </h2>
+        <form action="/register" method="post">
+    <div class="mb-4">
+        <label for="full-name" class="text-white text-sm font-medium font-['Roboto']">Full Name</label>
+        <input type="text" id="full-name" name="name" class="w-full mt-1 p-3 bg-[#1a2f34] border border-[#3e9d26] rounded-[8px] text-white text-sm font-['Roboto'] focus:outline-none focus:ring-2 focus:ring-[#3e9d26]" placeholder="Your Full Name" required>
+    </div>
+    <div class="mb-4">
+        <label for="email" class="text-white text-sm font-medium font-['Roboto']">Email</label>
+        <input type="email" id="email" name="email" class="w-full mt-1 p-3 bg-[#1a2f34] border border-[#3e9d26] rounded-[8px] text-white text-sm font-['Roboto'] focus:outline-none focus:ring-2 focus:ring-[#3e9d26]" placeholder="Your Email" required>
+    </div>
+    <div class="mb-4">
+        <label for="password" class="text-white text-sm font-medium font-['Roboto']">Password</label>
+        <input type="password" id="password" name="password" class="w-full mt-1 p-3 bg-[#1a2f34] border border-[#3e9d26] rounded-[8px] text-white text-sm font-['Roboto'] focus:outline-none focus:ring-2 focus:ring-[#3e9d26]" placeholder="Your Password" required>
+    </div>
+    <div class="mb-4">
+        <label for="confirm_password" class="text-white text-sm font-medium font-['Roboto']">Confirm Password</label>
+        <input type="password" id="confirm_password" name="confirm_password" class="w-full mt-1 p-3 bg-[#1a2f34] border border-[#3e9d26] rounded-[8px] text-white text-sm font-['Roboto'] focus:outline-none focus:ring-2 focus:ring-[#3e9d26]" placeholder="Confirm Your Password" required>
+    </div>
+    <div class="flex items-center mb-4">
+        <input type="checkbox" id="newsletter" name="newsletter" class="h-4 w-4 text-[#3e9d26] bg-[#1a2f34] border-[#3e9d26] rounded focus:ring-[#3e9d26]">
+        <label for="newsletter" class="ml-2 text-white text-sm font-normal font-['Roboto']">
+            Subscribe to our newsletter for exclusive updates
+        </label>
+    </div>
+    <div class="flex justify-center">
+        <button type="submit" id="submit-register" class="px-8 py-2.5 bg-[#3e9d26] rounded-[10px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-all duration-300 animate-button-hover">
+            Register
+        </button>
+    </div>
+</form>
+                <p class="text-white text-sm font-normal font-['Roboto'] text-center mt-4">
+                    Already have an account? <a href="/login" class="text-[#3e9d26] hover:underline">Log In</a>
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

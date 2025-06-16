@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - FootwearFuture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        .animate-button-hover:hover {
+            transform: scale(1.05) translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-[#0A2025]">
+     <%- include("./partials/Navbar.ejs") %>
+    <!-- About Hero Section -->
+    <section class="w-full bg-[#0A2025] py-16 px-4 sm:px-8 animate-fadeInUp">
+        <div class="mx-auto max-w-[1440px] flex flex-col items-center lg:flex-row justify-center gap-10">
+            <div class="w-full lg:w-1/2 flex-col justify-center items-start gap-8 flex">
+                <h1 class="text-white text-4xl sm:text-5xl font-bold font-['Roboto'] text-center lg:text-left">
+                    <span class="text-white">About </span><span class="text-[#3e9d26]">FootwearFuture</span>
+                </h1>
+                <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center lg:text-left">
+                    At FootwearFuture, we are pioneers in redefining how the world moves. Our mission is to craft futuristic sports shoes that fuse cutting-edge technology, unmatched comfort, and bold design. From athletes chasing records to everyday explorers, our footwear is engineered to empower every step with confidence and style.
+                </p>
+                <div class="flex justify-center lg:justify-start items-center gap-5">
+                    <a href="#products" class="px-8 py-2.5 bg-[#3e9d26] rounded-[10px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-all duration-300 animate-button-hover">
+                        Explore Our Products
+                    </a>
+                </div>
+            </div>
+            <img class="w-full max-w-[400px] lg:max-w-[500px] object-cover rounded-lg transform hover:scale-105 transition-transform duration-300" src="https://iili.io/338c9je.png" alt="FootwearFuture Innovation">
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="w-full bg-[#1a2f34] py-16 px-4 sm:px-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+        <div class="mx-auto max-w-[1440px]">
+            <h2 class="text-white text-3xl sm:text-4xl font-bold font-['Roboto'] text-center mb-8">
+                <span class="text-[#3e9d26]">Our </span><span class="text-white">Journey</span>
+            </h2>
+            <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center max-w-3xl mx-auto">
+                Founded in 2018, FootwearFuture began with a vision to revolutionize the footwear industry. Our team of designers, engineers, and athletes collaborated to create shoes that push the boundaries of performance and aesthetics. From our first prototype to our globally recognized collections, we’ve grown into a brand trusted by millions for innovation and quality.
+            </p>
+        </div>
+    </section>
+
+    <!-- Owner Section -->
+    <section class="w-full bg-[#0A2025] py-16 px-4 sm:px-8 animate-fadeInUp" style="animation-delay: 0.4s;">
+        <div class="mx-auto max-w-[1440px] flex flex-col items-center lg:flex-row justify-center gap-10">
+            <div class="w-full lg:w-1/2 flex-col justify-center items-start gap-8 flex">
+                <h2 class="text-white text-3xl sm:text-4xl font-bold font-['Roboto'] text-center lg:text-left">
+                    <span class="text-white">Meet </span><span class="text-[#3e9d26]">Our Founder</span>
+                </h2>
+                <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center lg:text-left">
+                    Sudip Chaudhary, the visionary behind FootwearFuture, founded the company with a passion for blending technology and style. With a background in biomechanical engineering, Sudip set out to create footwear that not only performs but inspires. Their leadership drives our commitment to innovation and sustainability.
+                </p>
+            </div>
+            <img class="w-full max-w-[400px] lg:max-w-[500px] object-cover rounded-lg transform hover:scale-105 transition-transform duration-300" src="/owner.jpg" alt="Sudip Chaudhary">
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="w-full bg-[#0A2025] py-16 px-4 sm:px-8 animate-fadeInUp" style="animation-delay: 0.6s;">
+        <div class="mx-auto max-w-[1440px]">
+            <h2 class="text-white text-3xl sm:text-4xl font-bold font-['Roboto'] text-center mb-12">
+                <span class="text-white">Our </span><span class="text-[#3e9d26]">Core Values</span>
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-[#1a2f34] rounded-lg p-6 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-white text-xl font-bold font-['Roboto'] mb-3">Innovation</h3>
+                    <p class="text-white text-sm font-normal font-['Roboto']">
+                        We embrace cutting-edge technology to design footwear that sets new standards in performance and comfort.
+                    </p>
+                </div>
+                <div class="bg-[#1a2f34] rounded-lg p-6 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-white text-xl font-bold font-['Roboto'] mb-3">Sustainability</h3>
+                    <p class="text-white text-sm font-normal font-['Roboto']">
+                        Committed to eco-friendly materials and processes, we strive to minimize our environmental footprint.
+                    </p>
+                </div>
+                <div class="bg-[#1a2f34] rounded-lg p-6 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-white text-xl font-bold font-['Roboto'] mb-3">Inclusivity</h3>
+                    <p class="text-white text-sm font-normal font-['Roboto']">
+                        Our designs cater to all, ensuring everyone can experience the future of footwear, regardless of their journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Commitment Section -->
+    <section class="w-full bg-[#1a2f34] py-16 px-4 sm:px-8 animate-fadeInUp" style="animation-delay: 0.8s;">
+        <div class="mx-auto max-w-[1440px] flex flex-col items-center lg:flex-row justify-center gap-10">
+            <div class="w-full lg:w-1/2 flex-col justify-center items-start gap-8 flex">
+                <h2 class="text-white text-3xl sm:text-4xl font-bold font-['Roboto'] text-center lg:text-left">
+                    <span class="text-[#3e9d26]">Sustainability </span><span class="text-white">at Heart</span>
+                </h2>
+                <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center lg:text-left">
+                    Sustainability is the cornerstone of FootwearFuture. We use recycled materials, like ocean-bound plastics and bio-based fibers, to craft durable, high-performance shoes. Our manufacturing processes are optimized to reduce waste and energy, ensuring a healthier planet for future generations.
+                </p>
+                <p class="text-white text-base sm:text-lg font-normal font-['Roboto'] text-center lg:text-left">
+                    Through partnerships with global environmental initiatives, we support ethical production and community empowerment. Every pair of FootwearFuture shoes represents a step toward a sustainable, stylish future.
+                </p>
+                <div class="flex justify-center lg:justify-start items-center gap-5">
+                    <button id="discover-more-btn" class="px-8 py-2.5 bg-[#3e9d26] rounded-[10px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-all duration-300 animate-button-hover">
+                        Discover More
+                    </button>
+                </div>
+            </div>
+            <img class="w-full max-w-[400px] lg:max-w-[500px] object-cover rounded-lg transform hover:scale-105 transition-transform duration-300" src="https://iili.io/338c9je.png" alt="Sustainable Footwear">
+        </div>
+    </section>
+
+    <!-- Discover More Modal -->
+    <div id="discover-more-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+        <div class="bg-[#1a2f34] p-6 rounded-lg w-full max-w-md">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-white text-xl font-bold font-['Roboto']">Our Sustainable Shoes</h2>
+                <button id="close-discover-more" class="text-white text-xl">×</button>
+            </div>
+            <p class="text-white text-sm font-normal font-['Roboto'] mb-4">
+                FootwearFuture’s shoes are crafted with the planet in mind. We use <span class="text-[#3e9d26] font-semibold">ocean-bound plastics</span> and <span class="text-[#3e9d26] font-semibold">bio-based fibers</span> to create lightweight, durable soles that reduce environmental impact. Our proprietary <span class="text-[#3e9d26] font-semibold">EcoFlex technology</span> ensures maximum comfort and energy return, making every step efficient and eco-friendly.
+            </p>
+            <p class="text-white text-sm font-normal font-['Roboto'] mb-4">
+                Each pair is designed with <span class="text-[#3e9d26] font-semibold">recyclable uppers</span> and non-toxic adhesives, minimizing waste. Our commitment to sustainability extends to our packaging, using <span class="text-[#3e9d26] font-semibold">100% recycled materials</span>. By choosing FootwearFuture, you’re supporting a movement to protect our planet while stepping into the future of performance footwear.
+            </p>
+            <div class="flex justify-center">
+                <a href="#contact" class="px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Toggle Discover More modal
+        const discoverMoreBtn = document.getElementById('discover-more-btn');
+        const discoverMoreModal = document.getElementById('discover-more-modal');
+        const closeDiscoverMore = document.getElementById('close-discover-more');
+
+        discoverMoreBtn.addEventListener('click', () => {
+            discoverMoreModal.classList.remove('hidden');
+        });
+
+        closeDiscoverMore.addEventListener('click', () => {
+            discoverMoreModal.classList.add('hidden');
+        });
+
+        // Close modal when clicking outside
+        discoverMoreModal.addEventListener('click', (e) => {
+            if (e.target === discoverMoreModal) {
+                discoverMoreModal.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

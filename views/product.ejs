@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FootwearFuture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-[#0A2025]">
+     <%- include("./partials/Navbar.ejs") %>
+    <!-- Products Section -->
+    <section class="w-full bg-[#0A2025] py-16 px-4 sm:px-8">
+        <div class="mx-auto max-w-[1440px]">
+            <h1 class="text-white text-4xl sm:text-5xl font-bold font-['Roboto'] text-center mb-12">
+                <span class="text-white">Our </span><span class="text-[#3e9d26]">Futuristic Footwear</span>
+            </h1>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/first.jpg" alt="PulseRunner X1">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">PulseRunner X1</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Experience dynamic cushioning and sleek design for ultimate performance.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$129.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/second.jpg" alt="AeroGlide Z2">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">AeroGlide Z2</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Lightweight and breathable, perfect for long-distance runs.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$149.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/third.webp" alt="QuantumStride V3">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">QuantumStride V3</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Advanced support and durability for intense workouts.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$169.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/four.jpg" alt="NeoSpark T4">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">NeoSpark T4</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Vibrant style with responsive cushioning for everyday wear.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$109.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/five.jpg" alt="HyperVolt S5">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">HyperVolt S5</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Engineered for speed with cutting-edge stability.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$189.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="bg-[#1a2f34] rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-xl transition-transform duration-300">
+                    <img class="w-full h-64 object-cover" src="/six.jpg" alt="FlexiWave L6">
+                    <div class="p-6">
+                        <h3 class="text-white text-xl font-bold font-['Roboto']">FlexiWave L6</h3>
+                        <p class="text-white text-sm font-normal font-['Roboto'] mt-2">Versatile comfort for both casual and athletic use.</p>
+                        <p class="text-[#3e9d26] text-lg font-semibold font-['Roboto'] mt-4">$119.99</p>
+                        <button class="mt-6 px-6 py-2 bg-[#3e9d26] rounded-[8px] text-white text-sm font-semibold font-['Roboto'] hover:bg-[#2e7d1c] transition-colors w-full">Shop Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
