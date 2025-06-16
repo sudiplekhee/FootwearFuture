@@ -28,6 +28,9 @@ app.get("/register", (req, res) => {
 app.get("/login", (req, res) => {
     res.render("authentication/login.ejs");
 });
+app.get("/productadd",(req,res)=>{
+    res.render("todo/product.ejs");
+})
 app.post('/submit-contact', async (req, res) => {
     const { name, email, message } = req.body;
     console.log('Form Data:', { name, email, message });
@@ -75,6 +78,8 @@ app.post("/login",async(req,res)=>{
        }
      }
 })
+
+
 app.listen(1000, () => {
     console.log("The port is started lets do the project");
 });

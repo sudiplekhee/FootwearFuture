@@ -22,6 +22,7 @@ const db = {};
 db.sequelize = sequelize; // ✅ include sequelize instance
 db.users = require("../models/userModel")(sequelize, DataTypes);
 db.registerusers = require("../models/registerModeL")(sequelize, DataTypes);
+db.Products=require("../models/Product")(sequelize,DataTypes)
 
 
 sequelize.sync({ alter: true })
