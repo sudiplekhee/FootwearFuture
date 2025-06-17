@@ -9,7 +9,7 @@
 <body class="bg-gray-100 min-h-screen flex items-center justify-center">
     <div class="max-w-2xl w-full mx-auto bg-white p-8 rounded-2xl shadow-xl my-8">
         <h2 class="text-3xl font-bold mb-6 text-center text-green-700">Add New Shoe</h2>
-        <form action="/products" method="POST" enctype="multipart/form-data" class="space-y-6">
+        <form action="/productadd" method="POST">
             <div>
                 <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Shoe Name</label>
                 <input name="name" type="text" placeholder="Enter shoe name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200" required />
@@ -43,17 +43,6 @@
                 <label for="discount" class="block text-sm font-medium text-gray-700 mb-1">Discount Price</label>
                 <input name="discount"type="number"placeholder="Enter discount price" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200"/>
             </div>
-
-            <div>
-                <label for="stock" class="block text-sm font-medium text-gray-700 mb-1">Stock</label>
-                <input name="stock" type="number" placeholder="Enter stock quantity" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500 transition duration-200"/>
-            </div>
-
-            <div>
-                <label for="image" class="block text-sm font-medium text-gray-700 mb-1">Product Image</label>
-                <input name="image" type="file" class="w-full px-4 py-3 border border-gray-300 rounded-lg file:bg-green-100 file:border-none file:px-4 file:py-2 file:text-green-700 file:rounded-lg file:cursor-pointer hover:file:bg-green-200 transition duration-200"/>
-            </div>
-
             <button 
                 type="submit" 
                 class="w-full bg-green-600 text-white px-4 py-3 rounded-lg hover:bg-green-700 focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition duration-200 font-semibold">

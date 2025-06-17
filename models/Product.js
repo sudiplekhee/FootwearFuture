@@ -7,8 +7,6 @@ const makeproduct = (sequelize, DataTypes) => {
     brand: DataTypes.STRING,
     price: DataTypes.FLOAT,
     discount: DataTypes.FLOAT,
-    stock: DataTypes.INTEGER,
-    image: DataTypes.STRING,
   });
   return Product;
 };
