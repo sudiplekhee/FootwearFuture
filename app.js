@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const db = require("./config/db");
+const product=require("./models/Product")
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
@@ -32,6 +33,16 @@ app.get("/login", (req, res) => {
 app.get("/Productadd",(req,res)=>{
     res.render("todo/product.ejs");
 })
+app.get("/gettodo", async (req, res) => {
+    try {
+        const products = await db.Products.findAll();  // use db.Products
+        res.render("todo/gettodo", { products });     // send as lowercase 'products'
+    } catch (err) {
+        console.error(err);
+        res.status(500).send("Server Error");
+    }
+});
+
 app.post("/productadd", async (req, res) => {
   try {
     const { name, description, category, brand, price, discount } = req.body;
@@ -51,7 +62,7 @@ app.post("/productadd", async (req, res) => {
 
     console.log("✅ Product added successfully:", newProduct);
 
-    res.redirect("/product");
+    res.redirect("/gettodo");
   } catch (error) {
     console.error("🔥 ERROR while adding product:", error); // this is the key line
     res.status(500).send("Something went wrong while adding product");
